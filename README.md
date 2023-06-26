@@ -7,11 +7,9 @@ Python setup can be complicated. This section documents how to set up your machi
 
 ### Python Installation and Tools
 
-You can complete this course using any OS: Windows, macOS, Linux, etc.
+This project requires Python 3. You can download the latest Python version from Python.org. Follow the appropriate installation instructions for your operating system.
 
-This course requires Python 3. You can download the latest Python version from Python.org. Follow the appropriate installation instructions for your operating system.
-
-You should have basic Python programming skills before attempting this course. Learning the language is always a prerequisite for learning automation. If you need help learning Python, check out this article: How Do I Start Learning Python?
+You should have basic Python programming skills before attempting this project. Learning the language is always a prerequisite for learning automation. If you need help learning Python, check out this article: How Do I Start Learning Python?
 
 You should also have a good Python editor/IDE. Good choices include PyCharm and Visual Studio Code.
 
@@ -25,13 +23,13 @@ If the python command doesn't work or doesn’t print the expected version numbe
 
 ### Virtual Environments
 
-Running pip install will install the pytest package globally for the whole system. Installing Python packages globally is okay for this course, but it typically isn't a best practice in the "read world." Instead, each project should manage its own dependencies locally using a virtual environment. Virtual environments let projects avoid unnecessary dependencies and version mismatches.
+Running pip install will install the pytest package globally for the whole system. Installing Python packages globally is okay for this project, but it typically isn't a best practice in the "read world." Instead, each project should manage its own dependencies locally using a virtual environment. Virtual environments let projects avoid unnecessary dependencies and version mismatches.
 
-For simplicity, this course will not use or teach virtual environments. If you would like to learn virtual environments on your own, then RealPython's article Python Virtual Environments: A Primer is an excellent place to start.
+For simplicity, this project will not use or teach virtual environments. If you would like to learn virtual environments on your own, then RealPython's article Python Virtual Environments: A Primer is an excellent place to start.
 
 ### Package Versions
 
-The requirements.txt file contains the versions for each package used in this course.
+The requirements.txt file contains the versions for each package used in this project.
 
 ## Running Tests
 
