@@ -5,7 +5,7 @@ import pytest
 PRODUCT_LIST = FileClass.get_property_from_file('PRODUCTS_LIST')
 SEARCH_PRODUCT = FileClass.get_property_from_file('SEARCH')
 
-client = APIClient();
+client = APIClient()
 
 @pytest.mark.api
 @pytest.mark.products
