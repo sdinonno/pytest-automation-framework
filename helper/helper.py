@@ -1,7 +1,7 @@
 import json
 import os
 
-ENDPOINTS_FILE = os.path.join("..", "api/endpoints.json")
+ENDPOINTS_FILE = os.path.join("api", "endpoints.json")
 
 class FileClass:
     

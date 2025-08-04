@@ -6,7 +6,7 @@ class APIClient:
         self.base_url = self.get_url_base()
 
     def get_url_base(self):
-        with open('../api/endpoints.json') as json_file:
+        with open('api/endpoints.json') as json_file:
             data = json.load(json_file)
         return data['BASE_URL']
 
