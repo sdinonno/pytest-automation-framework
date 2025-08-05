@@ -1,38 +1,85 @@
 # pytest-automation-framework
 
-This repo contains example tests for https://automationexercise.com/api/
+This repository provides an automation framework for testing with [pytest](https://pytest.org/) and includes example tests for the [automationexercise.com API](https://automationexercise.com/api/).
 
-## Python Setup
-Python setup can be complicated. This section documents how to set up your machine for Python test automation development.
+## Prerequisites
 
-### Python Installation and Tools
+- **Python 3.7 or higher**  
+  Download the latest version from [Python.org](https://www.python.org/downloads/).
+- **Git**  
+  Optional, for cloning this repository locally. Download it from [git-scm.com](https://git-scm.com/).
+- **Recommended code editor:**  
+  - [PyCharm](https://www.jetbrains.com/pycharm/)
+  - [Visual Studio Code](https://code.visualstudio.com/)
 
-This project requires Python 3. You can download the latest Python version from Python.org. Follow the appropriate installation instructions for your operating system.
+> It is recommended to have basic Python knowledge before working on this project.
 
-You should have basic Python programming skills before attempting this project. Learning the language is always a prerequisite for learning automation. If you need help learning Python, check out this article: How Do I Start Learning Python?
+## Installation
 
-You should also have a good Python editor/IDE. Good choices include PyCharm and Visual Studio Code.
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/sdinonno/pytest-automation-framework.git
+   cd pytest-automation-framework
+   ```
 
-You will also need Git if you want to clone this repository locally. If you are new to Git, try learning the basics.
+2. **Install dependencies**  
+   Using a virtual environment is recommended but optional for this project.
 
-### Python Installation Troubleshooting
+   ```bash
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
 
-Unfortunately, installing Python properly can be complicated, especially if Python was previously installed on your machine. To verify your Python installation, enter python --version at the command line. You should see the proper version printed.
+   If you have multiple Python installations, use `python3` and `pip3` instead.
 
-If the python command doesn't work or doesn’t print the expected version number, then try using the python3 command instead. If that still doesn't work, then the correct Python installation might not be included in your system path. Find the directory into which Python was installed, manually add it to the system path, relaunch the command line, and try running Python again.
-
-### Virtual Environments
-
-Running pip install will install the pytest package globally for the whole system. Installing Python packages globally is okay for this project, but it typically isn't a best practice in the "read world." Instead, each project should manage its own dependencies locally using a virtual environment. Virtual environments let projects avoid unnecessary dependencies and version mismatches.
-
-For simplicity, this project will not use or teach virtual environments. If you would like to learn virtual environments on your own, then RealPython's article Python Virtual Environments: A Primer is an excellent place to start.
-
-### Package Versions
-
-The requirements.txt file contains the versions for each package used in this project.
+3. **Verify your Python installation**  
+   ```bash
+   python --version
+   ```
+   If this fails, try:
+   ```bash
+   python3 --version
+   ```
 
 ## Running Tests
 
-To run the example tests from the command line, run python -m pytest from the project root directory. This command will discover and run all tests in the project.
+From the project root, run:
 
+```bash
+python -m pytest
+```
+or
+```bash
+pytest
+```
 
+This command will discover and execute all tests in the project.
+
+## Project Structure
+
+- `/tests` – Contains automated test cases.
+- `/src` or `/framework` – (Optional) Source code for the automation framework.
+- `requirements.txt` – List of project dependencies.
+- `README.md` – This file.
+
+## Notes on Virtual Environments
+
+Although you can install packages globally, it is best practice to use virtual environments to avoid conflicts between projects. You can create one with:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+venv\Scripts\activate     # On Windows
+```
+
+Then install the dependencies as described above.
+
+## Useful Resources
+
+- [pytest official documentation](https://docs.pytest.org/en/stable/)
+- [RealPython: Python Virtual Environments Primer](https://realpython.com/python-virtual-environments-a-primer/)
+- [API Automation with Python](https://automationexercise.com/api/)
+
+---
+
+Questions or suggestions? Open an issue or contact the maintainer.
